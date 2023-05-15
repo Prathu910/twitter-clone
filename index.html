@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module" defer></script>
+
+    <title>Fritter</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1 class="title">FRITTER</h1>
+        <i class="fa-solid fa-toggle-off dark-toggle"></i>
+      </div>
+    </header>
+    <main>
+      <div class="tweetTextarea">
+        <img src="images/scrimbalogo.png" alt="Fritter Logo" />
+        <textarea
+          name="writeTweet"
+          id="writeTweet"
+          placeholder="What's happening"
+        ></textarea>
+      </div>
+      <button id="post" class="tweet-btn">Tweet</button>
+      <hr />
+      <div class="tweets">
+        <div class="tweet">
+          <img src="images/musk.png" alt="musk" />
+          <div class="tweetDetails">
+            <p class="tweetHandle">@prathu</p>
+            <p class="tweetText">
+              Buy Bitcoin, ETH Make 💰💰💰 low low prices. Guaranteed return on
+              investment. HMU DMs open!!
+            </p>
+            <div class="tweetActions">
+              <i class="fa-regular fa-comment-dots tweetAction"></i>
+              <i class="fa-regular fa-heart tweetAction"></i>
+              <i class="fa-solid fa-retweet tweetAction"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Reply Section -->
+        <div class="tweet-reply">
+          <!-- Add your Reply -->
+          <div class="your-reply">
+            <div class="replytext">
+              <img src="images/scrimbalogo.png" alt="profile-pic" />
+              <textarea
+                name="reply"
+                id="reply"
+                placeholder="Enter Your Reply.."
+              ></textarea>
+            </div>
+            <button class="reply-btn">Reply</button>
+          </div>
+          <!-- Number of replies section -->
+          <div class="replies">
+            <img src="images/tcruise.png" alt="cruise" />
+            <div class="repliesDetails">
+              <p class="tweetHandle">@TomCruise</p>
+              <p class="tweetText">Yes! Sign me up!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
